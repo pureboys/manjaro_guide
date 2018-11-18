@@ -20,7 +20,7 @@ Server = http://mirrors.163.com/archlinux-cn/$arch
 
 
 ```
-# edit .zshrc
+# edit .profile
 export LC_ALL=zh_CN.UTF-8
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
