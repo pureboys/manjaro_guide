@@ -51,7 +51,7 @@ switches:
 14. sudo pacman -S google-chrome
 15. sudo pacman -S shadowsocks-qt5
 16. github 下载 SwitchyOmega, 配置安装
-17. sudo pacman -S docker
+17. sudo pacman -S docker docker-compose
 
 ```
 Docker 官方中国区
@@ -108,4 +108,5 @@ sudo gpasswd -a $USER vboxusers
 # restart
 ```
 26. sudo pacman -S vagrant 
-
+27. sudo pacman -S flashplugin firefox-i18n-zh-cn
+28. sudo pacman -S postman-bin
