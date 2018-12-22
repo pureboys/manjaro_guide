@@ -46,7 +46,7 @@ switches:
 ```
 
 
-12. sudo pacman -S mpv
+12. sudo pacman -S mpv smplayer
 13. sudo pacman -S code
 14. sudo pacman -S google-chrome
 15. sudo pacman -S shadowsocks-qt5
