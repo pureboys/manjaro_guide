@@ -109,4 +109,5 @@ sudo gpasswd -a $USER vboxusers
 ```
 26. sudo pacman -S vagrant 
 27. sudo pacman -S flashplugin firefox-i18n-zh-cn
-28. sudo pacman -S postman-bin
+28. sudo pacman -S insomnia  # resful 请求
+29. sudo pacman -S bleachbit # 清理垃圾
