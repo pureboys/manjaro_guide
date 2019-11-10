@@ -28,7 +28,8 @@ export XMODIFIERS="@im=fcitx"
 
 11. 1 设置默认简体
 ```
-~/.config/ibus/rime/build/luna_pinyin.schema.yaml
+~/.config/ibus/rime/build/luna_pinyin.schema.yaml #ibus 
+~/.config/fcitx/rime/build/luna_pinyin.schema.yaml #fcitx
 
 switches:
   - name: ascii_mode
