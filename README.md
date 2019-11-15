@@ -19,7 +19,7 @@ Server = http://mirrors.163.com/archlinux-cn/$arch
 11. 输入法配置 -> 中州输入法
 
 ```
-# edit .profile
+# edit .xprofile 如果没有就新建
 export LC_ALL=zh_CN.UTF-8
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
