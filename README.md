@@ -112,3 +112,4 @@ sudo gpasswd -a $USER vboxusers
 27. sudo pacman -S flashplugin firefox-i18n-zh-cn
 28. sudo pacman -S insomnia  # resful 请求
 29. sudo pacman -S bleachbit # 清理垃圾
+30. sudo pacman -S flameshot # 好用的截图工具
