@@ -13,10 +13,10 @@ Server = http://mirrors.163.com/archlinux-cn/$arch
 6. sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 7. sudo pacman -S fcitx-im
 8. sudo pacman -S fcitx-configtool
-9. sudo pacman -S fcitx-rime
+9. yay -S iflyime   安装讯飞输入法
 
 10. system settings -> language -> regional settings -> chinese
-11. 输入法配置 -> 中州输入法
+11. 输入法配置 
 
 ```
 # edit .xprofile 如果没有就新建
@@ -25,26 +25,8 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
+11.1 之后重启
 
-11. 1 设置默认简体
-```
-~/.config/ibus/rime/build/luna_pinyin.schema.yaml #ibus 
-~/.config/fcitx/rime/build/luna_pinyin.schema.yaml #fcitx
-
-switches:
-  - name: ascii_mode
-    reset: 0
-    states: ["中文", "西文"]
-  - name: full_shape
-    states: ["半角", "全角"]
-  - name: simplification
-    reset: 1
-    states: ["漢字", "汉字"]
-  - name: ascii_punct
-    states: ["。，", "．，"]
-
-其实就是加一个 reset:1 的选择选成简体中文
-```
 
 
 12. sudo pacman -S mpv smplayer
