@@ -95,3 +95,13 @@ sudo gpasswd -a $USER vboxusers
 28. sudo pacman -S insomnia  # resful 请求
 29. sudo pacman -S bleachbit # 清理垃圾
 30. sudo pacman -S flameshot # 好用的截图工具
+
+### 字体更改
+
+```
+sudo mkdir -p /usr/share/fonts/truetype/ttf-monaco && \
+sudo wget https://gist.github.com/rogerleite/b50866eb7f7b5950da01ae8927c5bd61/raw/862b6c9437f534d5899e4e68d60f9bf22f356312/mfont.ttf -O - > \
+/usr/share/fonts/truetype/ttf-monaco/Monaco_Linux.ttf && \
+sudo fc-cache
+```
+
