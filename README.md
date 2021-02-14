@@ -52,7 +52,11 @@ sudo usermod -aG docker $USER
 
 sudo vim /etc/docker/daemon.json
 {
-  "registry-mirrors": ["https://registry.docker-cn.com"]
+    "registry-mirrors": [
+        "https://hub-mirror.c.163.com",
+        "https://mirror.baidubce.com"
+    ],
+    "data-root": "/data/docker"
 }
 
 systemctl enable docker
