@@ -39,6 +39,7 @@ ustc
 https://docker.mirrors.ustc.edu.cn
 
 sudo usermod -aG docker $USER
+bip 调整网段用
 
 sudo vim /etc/docker/daemon.json
 {
@@ -46,7 +47,8 @@ sudo vim /etc/docker/daemon.json
         "https://hub-mirror.c.163.com",
         "https://mirror.baidubce.com"
     ],
-    "data-root": "/data/docker"
+    "data-root": "/data/docker",
+    "bip": "192.168.100.1/24"
 }
 
 systemctl enable docker
