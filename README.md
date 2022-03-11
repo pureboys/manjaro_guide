@@ -48,8 +48,19 @@ sudo vim /etc/docker/daemon.json
         "https://mirror.baidubce.com"
     ],
     "data-root": "/data/docker",
-    "bip": "192.168.100.1/24"
+    "bip": "192.168.100.1/24",
+    "debug" : true,
+    "default-address-pools" : [
+        {
+          "base" : "12.11.0.0/16",
+          "size" : 24
+        }
+      ]
 }
+
+bip // 仅对docker可以用， docker-compose 不可以
+default-address-pools // 可以对dock-compose 可以使用
+
 
 systemctl enable docker
 systemctl start docker
