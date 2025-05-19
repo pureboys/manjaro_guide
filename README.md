@@ -113,7 +113,8 @@ sudo fc-cache
 
 31. 微信处理KDE 大小不一致问题
 
-如果你的系统没有菜单编辑器，也可以自行将/usr/share/applications/wechat.desktop复制为~/.local/share/applications/wechat.desktop（菜单编辑器其实修改的也是家目录下的这个文件），然后编辑Exec=所在行，比如设置输入法为fcitx、设置自动缩放并添加x11支持：Exec=env QT_IM_MODULE=fcitx QT_AUTO_SCREEN_SCALE_FACTOR=1 'QT_QPA_PLATFORM=wayland;xcb' /usr/bin/wechat %U。
+如果你的系统没有菜单编辑器，也可以自行将/usr/share/applications/wechat.desktop复制为~/.local/share/applications/wechat.desktop（菜单编辑器其实修改的也是家目录下的这个文件），然后编辑Exec=所在行，比如设置输入法为fcitx、设置自动缩放并添加x11支持：
+`Exec=env QT_IM_MODULE=fcitx QT_AUTO_SCREEN_SCALE_FACTOR=1 'QT_QPA_PLATFORM=wayland;xcb' /usr/bin/wechat %U`
 
 
 
